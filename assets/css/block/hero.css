@@ -1,0 +1,63 @@
+.hero {
+    padding: 120px 0 60px 0;
+    background: linear-gradient(
+        180deg,
+        var(--colorGradient1),
+        var(--colorGradient2)
+    );
+}
+.hero__wrapper {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+.hero__info {
+    width: 100%;
+    max-width: 800px;
+}
+.hero__title {
+    font-family: var(--font-cairo);
+    font-weight: var(--font-bold);
+    font-size: 60px;
+    line-height: 72px;
+    color: var(--colorWhite);
+    text-shadow: 0 4px 4px rgba(0,0,0,.25);
+    margin-bottom: 30px;
+}
+.hero__title > span {
+    font-family: var(--font-cairo);
+    font-weight: var(--font-bold);
+    font-size: 60px;
+    line-height: 72px;
+    color: var(--colorYellow);
+    text-shadow: 0 4px 4px rgba(0,0,0,.25);
+}
+.hero__descr {
+    font-family: var(--font-roboto);
+    font-weight: var(--font-regular);
+    font-size: 16px;
+    line-height: 120%;
+    color: var(--colorWhite2);
+    margin-bottom: 30px;
+}
+.hero__btn {
+    background-color: var(--colorWhite);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--colorMain); 
+    padding: 12px 30px;
+
+    font-family: var(--font-roboto);
+    font-weight: var(--font-medium);
+    font-size: 14px;
+    line-height: 120%;
+    color: var(--colorDark);
+    width: 100%;
+    max-width: 230px;
+}
+
+.hero__btn:hover {
+    background-color: #f1e9f890;
+   color: var(--colorMain)
+}

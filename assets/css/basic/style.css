@@ -1,0 +1,9 @@
+@import 'fonts.css';
+@import 'var.css';
+@import 'normalize.css';
+@import 'global.css';
+
+@import '../block/header.css';
+@import '../block/hero.css';
+@import '../block/advantages.css';
+@import '../block/product.css';

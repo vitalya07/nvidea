@@ -1,0 +1,30 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-cairo);
+    font-weight: var(--font-regular);
+    font-size: 22px;
+    line-height: 120%;
+    color: var(--colorDark)
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+button, input {
+    border: none;
+    transition: all .3s ease;
+    &:focus {
+        outline: 1px solid #00000000;
+    }
+}

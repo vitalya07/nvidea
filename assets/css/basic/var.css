@@ -1,0 +1,36 @@
+:root {
+    /* FONT FAMILIES */
+    --font-cairo: "Cairo", sans-serif;
+    --font-exo: "Exo 2", sans-serif;
+    --font-fira: "Fira Sans", sans-serif;
+    --font-roboto: "Roboto", sans-serif;
+
+    /* FONT WEIGHTS */
+    --font-thin: 100;
+    --font-extra-light: 200;
+    --font-light: 300;
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+    --font-extra-bold: 800;
+    --font-black: 900;
+    /* COLORS */
+    --colorText: #002657;
+    --colorDark: #141414;
+    --colorDark2: #1a1a1a;
+    --colorBlack: #000;
+    --colorWhite: #fff;
+    --colorWhite2: #e6ecf1;
+    --colorYellow: #ffff05;
+     --colorYellow2: #e8ff02;
+    --colorGradient1: #17121b;
+    --colorGradient2: #a7369d;
+    --colorMain:#9232e8;
+    --colorMainHover:#ad6be8;
+    --colorMain2: #b4386f;
+    --colorMain3:#ad3789;
+    --colorMain4:#aa3794;
+    --colorMain5:#a636a6;
+    --colorPhone: #571196;
+}

@@ -1,0 +1,72 @@
+.product {
+    padding: 60px 0;
+    background-image: url(../../img/product/reserve-now-bg.webp);
+}
+.product__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+}
+.product__info {
+    width: 100%;
+    max-width: 400px;
+}
+.product__img {
+    width: 100%;
+    max-width: 600px;
+}
+.product__img > picture {
+    width: 100%;
+    height: auto;
+}
+.product__img > picture > img {
+    width: 100%;
+    height: auto;
+}
+.product__title {
+    font-family: var(--font-cairo);
+    font-weight: var(--font-bold);
+    font-size: 64px;
+    line-height: 120%;
+    color: var(--colorDark2)
+}
+.product__title > span {
+    font-family: var(--font-cairo);
+    font-weight: var(--font-bold);
+    font-size: 64px;
+    line-height: 120%;
+    
+    background: linear-gradient(135deg, #bc3a54 -7.9%, #9233e9 159.38%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+.product__descr {
+    font-family: var(--font-cairo);
+    font-weight: var(--font-regular);
+    font-size: 22px;
+    line-height: 120%;
+    color: var(--colorDark2);
+    margin-bottom: 30px;
+}
+.product__btn {
+    background-color: var(--colorMain);
+    border: 1px solid var(--colorMain);
+    color: var(--colorWhite);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-roboto);
+    font-size: 14px;
+    font-weight: var(--font-medium);
+    line-height: normal;
+    padding: 12px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all .3s ease-in-out;
+}
+.product__btn:hover {
+    background-color: #dfbff9;
+    color: var(--colorMain);
+}
