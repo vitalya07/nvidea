@@ -1,0 +1,62 @@
+.specifications {
+    padding: 100px 0;
+    background: url('../../img/specifications/specifications.webp');
+    background-color: #191919;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.specifications__title {
+    font-family: var(--font-cairo);
+    font-weight: var(--font-bold);
+    color: var(--colorWhite);
+    font-size: 51px;
+    line-height: 120%;
+    margin-bottom: 43px;
+    text-align: center;
+}
+.specifications__table {
+    width: 100%;
+    max-width: 924px;
+    margin: 0 auto;
+    background-color: var(--colorDark3);
+    padding: 26px;
+    border-radius: 10px;
+}
+.specifications__table-item-noborder {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 14px;
+}
+.specifications__table-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--colorGray3);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px 14px;
+}
+.specifications__table-item--name {
+    font-family: var(--font-roboto);
+    font-weight: var(--font-regular);
+    color: var(--colorWhite);
+    font-size: 15px;
+    line-height: 120%;
+}
+.specifications__table-item--name-pink {
+    color: var(--colorGray);
+}
+.specifications__table-item--descr {
+    font-family: var(--font-roboto);
+    font-weight: var(--font-regular);
+    color: var(--colorWhite);
+    font-size: 15px;
+    line-height: 120%;
+    text-align: left;
+    max-width: 300px;
+}
+.specifications__table-item--descr-pink {
+    color: var(--colorGray);
+}

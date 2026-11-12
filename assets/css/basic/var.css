@@ -19,9 +19,14 @@
     --colorText: #002657;
     --colorDark: #141414;
     --colorDark2: #1a1a1a;
+    --colorDark3: #363636;
     --colorBlack: #000;
     --colorWhite: #fff;
     --colorWhite2: #e6ecf1;
+    --colorWhite3: #d4d4d4;
+    --colorGray: #e8d4fe;
+    --colorGray2: #424242;
+    --colorGray3: #4b4b4b;
     --colorYellow: #ffff05;
      --colorYellow2: #e8ff02;
     --colorGradient1: #17121b;
@@ -33,4 +38,5 @@
     --colorMain4:#aa3794;
     --colorMain5:#a636a6;
     --colorPhone: #571196;
+    --colorHover: #c884fc60;
 }
