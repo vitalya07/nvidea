@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/basic/style.css">
     <script src="assets/JS/tabs.js" defer></script>
+    <script src="assets/JS/faq.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -620,6 +621,151 @@
         </div>
         </section>
         <!-- SECTION RESERVATION END -->
+        <!-- SECTION FAQ START -->
+        <!-- <section class="faq">
+            <div class="container">
+                <h2 class="faq__title">Часто задаваемые вопросы</h2>
+                <p class="faq__descr">У нас есть специальная техническая команда, которая занимается адаптацией пользователей NVIDIA H100 SXM и готова помочь вам настроить среду Supercloud в соответствии с вашими требованиями.</p>
+                
+            </div>
+        </section> -->
+
+        <section class="faq" id="faq">
+            <div class="container">
+                <div class="faq__inner">
+                    <div class="faq__top">
+                        <h2 class="faq__title">Часто <span>задаваемые </span>вопросы</h2>
+                        <p class="faq__subtitle">
+                            Наша техническая команда поможет вам настроить
+                            среду Supercloud с необходимой конфигурацией
+                            NVIDIA H100 SXM.
+                        </p>
+                    </div>
+                    <div class="faq__list">
+                        <div class="faq__list-item">
+                            <div class="faq__list-item--top">
+                                <div class="faq__list-item--name">В чем разница между моделями NVIDIA H100 SXM и PCIe?</div>
+                            </div>
+                            <div class="faq__list-item--bottom">
+                                <p class="faq__list-item--content">Обе модели NVIDIA H100 — SXM и PCIe — являются мощными графическими процессорами, но они различаются возможностями подключения и производительностью.  PCIe более гибкая и сравнительно недорогая, но у SXM вдвое больше памяти, более быстрая передача данных и более высокий предел энергопотребления, что обеспечивает экстремальную производительность.</p>
+                            </div>
+                            
+                        </div>
+                        <!-- 2 -->
+                        <div class="faq__list-item">
+                            <div class="faq__list-item--top">
+                                <div class="faq__list-item--name">Что такое NVIDIA H100 SXM?</div>
+                            </div>
+                            <div class="faq__list-item--bottom">
+                                <p class="faq__list-item--content">NVIDIA H100 SXM — это мощный графический процессор, разработанный для центров обработки данных и оптимизированный для ресурсоемких задач, таких как искусственный интеллект, научное моделирование и анализ больших данных.</p>
+                            </div>
+                            
+                        </div>
+                        <!-- 3 -->
+                        <div class="faq__list-item">
+                            <div class="faq__list-item--top">
+                                <div class="faq__list-item--name">Насколько NVIDIA H100 быстрее NVIDIA A100?</div>
+                            </div>
+                            <div class="faq__list-item--bottom">
+                                <p class="faq__list-item--content">NVIDIA H100 обеспечивает в 30 раз более высокую скорость логического вывода и в 9 раз более высокую скорость обучения, чем A100.</p>
+                            </div>
+                            
+                        </div>
+                        <!-- 4 -->
+                        <div class="faq__list-item">
+                            <div class="faq__list-item--top">
+                                <div class="faq__list-item--name">Каковы ключевые особенности графического процессора H100 SXM?</div>
+                            </div>
+                            <div class="faq__list-item--bottom">
+                                <p class="faq__list-item--content">Ключевые особенности NVIDIA H100 SXM включают</p>
+                                <ul class="faq__list-item--list">
+                                    <li>Форм-фактор SXM: высокая плотность размещения графических процессоров, эффективное охлаждение и оптимизация энергопотребления делают его подходящим для ресурсоемких приложений.</li>
+                                    <li>Эталонная архитектура DGX: интегрирована с эталонной архитектурой DGX и отвечает строгим требованиям, предъявляемым к ИИ и машинному обучению корпоративного уровня.</li>
+                                    <li>Масштабируемая конструкция: модульная архитектура обеспечивает бесшовную масштабируемость в соответствии с растущими вычислительными потребностями. Система может быть собрана из отдельных кластеров, включающих более 16 000 видеокарт NVIDIA H100.</li>
+                                    <li>Технология GPUDirect: эта технология ускоряет передачу данных и повышает производительность за счет прямого чтения и записи в память графического процессора и из нее, снижая нагрузку на центральный процессор и уменьшая задержку.</li>
+                                    <li>NVLink и NVSwitch: использование технологий NVLink и NVSwitch обеспечивает значительно более высокую пропускную способность межсоединений по сравнению с версиями PCIe, повышая общую производительность.</li>
+                                    <li>TDP 700 Вт: NVIDIA H100 SXM рассчитана на более высокую расчетную тепловую мощность (TDP) по сравнению с версиями с интерфейсом PCIe, что делает ее идеальным решением для самых ресурсоемких задач в области искусственного интеллекта и высокопроизводительных вычислений (HPC), требующих максимальной вычислительной мощности.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- 5 -->
+                        <div class="faq__list-item">
+                            <div class="faq__list-item--top">
+                                <div class="faq__list-item--name">Какова TDP NVIDIA H100 SXM?</div>
+                            </div>
+                            <div class="faq__list-item--bottom">
+                                <p class="faq__list-item--content">Мощность NVIDIA H100 SXM составляет до 700 Вт.</p>
+                            </div>
+                        </div>
+                        <!-- 6 -->
+                        <div class="faq__list-item">
+                            <div class="faq__list-item--top">
+                                <div class="faq__list-item--name">Сколько стоит NVIDIA H100 SXM?</div>
+                            </div>
+                            <div class="faq__list-item--bottom">
+                                <p class="faq__list-item--content">Стоимость аренды NVIDIA H100 SXM h100 на Hyperstack начинается от 3,20 долларов в час. Для долгосрочного использования вы можете арендовать NVIDIA H100 SXM по цене от 2,72 долларов в час.</p>
+                            </div>
+                        </div>
+                        <!-- 7 -->
+                        <div class="faq__list-item">
+                            <div class="faq__list-item--top">
+                                <div class="faq__list-item--name">Какие облачные провайдеры предлагают NVIDIA H100 SXM?</div>
+                            </div>
+                            <div class="faq__list-item--bottom">
+                                <p class="faq__list-item--content">Вы можете получить доступ к NVIDIA H100 SXM по запросу через Hyperstack</p>
+                            </div>
+                        </div>
+                        <!-- 8 -->
+                        <div class="faq__list-item">
+                            <div class="faq__list-item--top">
+                                <div class="faq__list-item--name">Какова почасовая стоимость использования NVIDIA H100 SXM на облачных платформах?</div>
+                            </div>
+                            <div class="faq__list-item--bottom">
+                                <p class="faq__list-item--content">Почасовая стоимость использования NVIDIA H100 SXM зависит от провайдера.  Однако на нашей облачной платформе вы можете получить доступ к NVIDIA H100 SXM по запросу за 3,20 доллара в час.</p>
+                            </div>
+                        </div>
+                        <!-- 9 -->
+                        <div class="faq__list-item">
+                            <div class="faq__list-item--top">
+                                <div class="faq__list-item--name">Как я могу арендовать графический процессор NVIDIA H100 SXM?</div>
+                            </div>
+                            <div class="faq__list-item--bottom">
+                                <p class="faq__list-item--content">Вы можете арендовать графический процессор NVIDIA H100 SXM на нашей консоли</p>
+                            </div>
+                        </div>
+                        <!-- 10 -->
+                        <div class="faq__list-item">
+                            <div class="faq__list-item--top">
+                                <div class="faq__list-item--name">Какие облачные провайдеры предлагают графические процессоры NVIDIA H200 SXM по запросу?</div>
+                            </div>
+                            <div class="faq__list-item--bottom">
+                                <p class="faq__list-item--content">Наше стремление к совершенству распространяется и на поддержку клиентов. Мы предлагаем помощь в режиме 24/7, чтобы вы всегда могли обратиться к нашим специалистам. Наша команда готова ответить на любой вопрос и помочь решить любую проблему, связанную с HGX SXM H100.</p>
+                            </div>
+                        </div>
+                        <!-- 11 -->
+                        <div class="faq__list-item">
+                            <div class="faq__list-item--top">
+                                <div class="faq__list-item--name">Можно ли арендовать графический процессор H100 SXM с гибкими условиями оплаты?</div>
+                            </div>
+                            <div class="faq__list-item--bottom">
+                                <p class="faq__list-item--content">Вы можете арендовать графический процессор NVIDIA H100 SXM на платформе Hyperstack, зайдя в консоль</p>
+                            </div>
+                        </div>
+                        <!-- 12 -->
+                        <div class="faq__list-item">
+                            <div class="faq__list-item--top">
+                                <div class="faq__list-item--name">Каковы типичные сценарии использования модуля H100 SXM в задачах искусственного интеллекта?</div>
+                            </div>
+                            <div class="faq__list-item--bottom">
+                                <p class="faq__list-item--content">Идеально подходит для передового обучения больших языковых моделей, обучения с подкреплением, крупномасштабных моделей компьютерного зрения и оптимизированных для FP8 рабочих нагрузок, требующих чрезвычайно высокой вычислительной мощности и быстрого межсоединения.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION FAQ END -->
     </main>
 </body>
 </html>
