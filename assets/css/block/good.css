@@ -41,6 +41,9 @@
     height: auto;
 }
 .good__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     max-width: 260px;
     padding: 12px 30px;
@@ -58,4 +61,226 @@
 .good__btn:hover {
     background-color: #d6c0ea;
 
+}
+/* ==============================
+   GOOD — 1280px
+============================== */
+@media (max-width: 1280px) {
+    .good__info {
+        max-width: 520px;
+    }
+
+    .good__img {
+        max-width: 520px;
+    }
+
+    .good__info-title {
+        font-size: 38px;
+    }
+
+    .good__info-descr {
+        font-size: 25px;
+    }
+}
+
+/* ==============================
+   GOOD — 1024px
+============================== */
+@media (max-width: 1024px) {
+    .good {
+        padding: 55px 0;
+    }
+
+    .good__info {
+        max-width: 460px;
+    }
+
+    .good__img {
+        max-width: 460px;
+    }
+
+    .good__info-title {
+        font-size: 35px;
+    }
+
+    .good__info-descr {
+        font-size: 23px;
+    }
+}
+
+/* ==============================
+   GOOD — 993px
+============================== */
+@media (max-width: 993px) {
+    .good__wrapper {
+        gap: 25px;
+    }
+
+    .good__info {
+        max-width: 430px;
+    }
+
+    .good__img {
+        max-width: 420px;
+    }
+
+    .good__info-title {
+        font-size: 32px;
+    }
+
+    .good__info-descr {
+        font-size: 21px;
+    }
+}
+
+/* ==============================
+   GOOD — 768px
+============================== */
+@media (max-width: 768px) {
+    .good {
+        padding: 50px 0;
+    }
+
+    .good__wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .good__info {
+        max-width: 600px;
+    }
+
+    .good__info-title {
+        font-size: 32px;
+        margin-bottom: 18px;
+    }
+
+    .good__info-descr {
+        font-size: 22px;
+        margin-bottom: 22px;
+    }
+
+    .good__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 280px;
+        margin: 0 auto;
+        font-size: 16px;
+    }
+
+    .good__img {
+        max-width: 500px;
+    }
+}
+
+/* ==============================
+   GOOD — 556px
+============================== */
+@media (max-width: 556px) {
+    .good {
+        padding: 45px 0;
+    }
+
+    .good__wrapper {
+        gap: 25px;
+    }
+
+    .good__info-title {
+        font-size: 29px;
+    }
+
+    .good__info-descr {
+        font-size: 20px;
+        line-height: 130%;
+    }
+
+    .good__img {
+        max-width: 100%;
+    }
+
+    .good__btn {
+        max-width: 100%;
+        padding: 14px 20px;
+    }
+}
+
+/* ==============================
+   GOOD — 450px
+============================== */
+@media (max-width: 450px) {
+    .good {
+        padding: 40px 0;
+    }
+
+    .good__info-title {
+        font-size: 27px;
+    }
+
+    .good__info-descr {
+        font-size: 19px;
+    }
+
+    .good__wrapper {
+        gap: 20px;
+    }
+}
+
+/* ==============================
+   GOOD — 380px
+============================== */
+@media (max-width: 380px) {
+    .good__info-title {
+        font-size: 25px;
+    }
+
+    .good__info-descr {
+        font-size: 18px;
+    }
+
+    .good__btn {
+        padding: 13px 15px;
+    }
+}
+
+/* ==============================
+   GOOD — 360px
+============================== */
+@media (max-width: 360px) {
+    .good {
+        padding: 35px 0;
+    }
+
+    .good__info-title {
+        font-size: 24px;
+    }
+
+    .good__info-descr {
+        font-size: 17px;
+    }
+
+    .good__wrapper {
+        gap: 18px;
+    }
+}
+
+/* ==============================
+   GOOD — 320px
+============================== */
+@media (max-width: 320px) {
+    .good__info-title {
+        font-size: 22px;
+    }
+
+    .good__info-descr {
+        font-size: 16px;
+        line-height: 140%;
+    }
+
+    .good__btn {
+        font-size: 16px;
+        padding: 13px 10px;
+    }
 }

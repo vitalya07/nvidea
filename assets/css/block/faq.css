@@ -146,3 +146,388 @@
     font-weight: var(--font-regular);
     line-height: 27px;
 }
+
+/* ==============================
+   FAQ — 1280px
+============================== */
+@media (max-width: 1280px) {
+    .faq {
+        padding: 55px 0;
+    }
+
+    .faq__title,
+    .faq__title > span {
+        font-size: 39px;
+    }
+
+    .faq__top {
+        margin-bottom: 40px;
+    }
+
+    .faq__list-item {
+        max-width: 900px;
+    }
+
+    .faq__list-item--name {
+        font-size: 19px;
+    }
+
+    .faq__list-item--content,
+    .faq__list-item--list > li {
+        font-size: 16px;
+        line-height: 145%;
+    }
+}
+
+/* ==============================
+   FAQ — 1024px
+============================== */
+@media (max-width: 1024px) {
+    .faq {
+        padding: 50px 0;
+    }
+
+    .faq__title,
+    .faq__title > span {
+        font-size: 36px;
+    }
+
+    .faq__top {
+        margin-bottom: 35px;
+    }
+
+    .faq__list-item--top {
+        padding: 18px 58px 18px 18px;
+    }
+
+    .faq__list-item--name {
+        font-size: 18px;
+    }
+
+    .faq__list-item--top::after {
+        width: 30px;
+        height: 30px;
+        right: 18px;
+    }
+
+    .faq__list-item--bottom {
+        padding: 17px 18px;
+    }
+
+    .faq__list-item.open .faq__list-item--bottom {
+        padding: 17px 18px;
+        max-height: 2000px;
+    }
+}
+
+/* ==============================
+   FAQ — 993px
+============================== */
+@media (max-width: 993px) {
+    .faq__title,
+    .faq__title > span {
+        font-size: 34px;
+    }
+
+    .faq__subtitle {
+        font-size: 16px;
+    }
+
+    .faq__top {
+        margin-bottom: 30px;
+    }
+
+    .faq__list-item--top {
+        padding: 17px 55px 17px 17px;
+    }
+
+    .faq__list-item--name {
+        font-size: 17px;
+        line-height: 130%;
+    }
+}
+
+/* ==============================
+   FAQ — 768px
+============================== */
+@media (max-width: 768px) {
+    .faq {
+        padding: 45px 0;
+    }
+
+    .faq__title,
+    .faq__title > span {
+        font-size: 31px;
+        line-height: 125%;
+    }
+
+    .faq__top {
+        margin-bottom: 28px;
+    }
+
+    .faq__subtitle {
+        font-size: 16px;
+        line-height: 145%;
+    }
+
+    .faq__list-item {
+        max-width: 100%;
+    }
+
+    .faq__list-item--top {
+        padding: 16px 52px 16px 16px;
+        border-radius: 10px;
+    }
+
+    .faq__list-item--name {
+        font-size: 17px;
+        line-height: 135%;
+    }
+
+    .faq__list-item--top::after {
+        width: 27px;
+        height: 27px;
+        right: 15px;
+    }
+
+    .faq__list-item--content {
+        font-size: 16px;
+        line-height: 145%;
+    }
+
+    .faq__list-item--list {
+        padding-left: 25px;
+    }
+
+    .faq__list-item--list > li {
+        font-size: 16px;
+        line-height: 145%;
+        margin-bottom: 8px;
+    }
+
+    .faq__list-item--bottom,
+    .faq__list-item.open .faq__list-item--bottom {
+        padding: 16px;
+    }
+}
+
+/* ==============================
+   FAQ — 556px
+============================== */
+@media (max-width: 556px) {
+    .faq {
+        padding: 40px 0;
+    }
+
+    .faq__title,
+    .faq__title > span {
+        font-size: 28px;
+    }
+
+    .faq__top {
+        margin-bottom: 25px;
+    }
+
+    .faq__subtitle {
+        font-size: 16px;
+        line-height: 145%;
+    }
+
+    .faq__list-item {
+        margin-bottom: 10px;
+    }
+
+    .faq__list-item--top {
+        padding: 15px 48px 15px 14px;
+    }
+
+    .faq__list-item--name {
+        font-size: 16px;
+        line-height: 140%;
+    }
+
+    .faq__list-item--top::after {
+        width: 24px;
+        height: 24px;
+        right: 13px;
+    }
+
+    .faq__list-item--content {
+        font-size: 16px;
+        line-height: 150%;
+    }
+
+    .faq__list-item--list {
+        padding-left: 22px;
+        margin-bottom: 1rem;
+    }
+
+    .faq__list-item--list > li {
+        font-size: 16px;
+        line-height: 145%;
+    }
+}
+
+/* ==============================
+   FAQ — 450px
+============================== */
+@media (max-width: 450px) {
+    .faq {
+        padding: 35px 0;
+    }
+
+    .faq__title,
+    .faq__title > span {
+        font-size: 26px;
+        line-height: 125%;
+    }
+
+    .faq__top {
+        margin-bottom: 22px;
+    }
+
+    .faq__list-item--top {
+        padding: 14px 44px 14px 12px;
+        border-radius: 9px;
+    }
+
+    .faq__list-item--name {
+        font-size: 16px;
+        line-height: 140%;
+    }
+
+    .faq__list-item--top::after {
+        width: 22px;
+        height: 22px;
+        right: 11px;
+    }
+
+    .faq__list-item--bottom,
+    .faq__list-item.open .faq__list-item--bottom {
+        padding: 14px 12px;
+    }
+
+    .faq__list-item--content {
+        font-size: 16px;
+    }
+
+    .faq__list-item--list {
+        padding-left: 20px;
+    }
+}
+
+/* ==============================
+   FAQ — 380px
+============================== */
+@media (max-width: 380px) {
+    .faq__title,
+    .faq__title > span {
+        font-size: 24px;
+    }
+
+    .faq__subtitle {
+        font-size: 16px;
+    }
+
+    .faq__list-item--top {
+        padding: 13px 42px 13px 11px;
+    }
+
+    .faq__list-item--name {
+        font-size: 16px;
+    }
+
+    .faq__list-item--top::after {
+        width: 21px;
+        height: 21px;
+        right: 10px;
+    }
+
+    .faq__list-item--bottom,
+    .faq__list-item.open .faq__list-item--bottom {
+        padding: 13px 11px;
+    }
+}
+
+/* ==============================
+   FAQ — 360px
+============================== */
+@media (max-width: 360px) {
+    .faq {
+        padding: 32px 0;
+    }
+
+    .faq__title,
+    .faq__title > span {
+        font-size: 23px;
+    }
+
+    .faq__list-item--top {
+        padding: 12px 40px 12px 10px;
+    }
+
+    .faq__list-item--name {
+        font-size: 16px;
+        line-height: 135%;
+    }
+
+    .faq__list-item--top::after {
+        width: 20px;
+        height: 20px;
+        right: 9px;
+    }
+
+    .faq__list-item--content,
+    .faq__list-item--list > li {
+        font-size: 16px;
+        line-height: 140%;
+    }
+}
+
+/* ==============================
+   FAQ — 320px
+============================== */
+@media (max-width: 320px) {
+    .faq {
+        padding: 30px 0;
+    }
+
+    .faq__title,
+    .faq__title > span {
+        font-size: 21px;
+    }
+
+    .faq__top {
+        margin-bottom: 20px;
+    }
+
+    .faq__list-item--top {
+        padding: 12px 38px 12px 9px;
+    }
+
+    .faq__list-item--name {
+        font-size: 16px;
+        line-height: 135%;
+    }
+
+    .faq__list-item--top::after {
+        width: 19px;
+        height: 19px;
+        right: 8px;
+    }
+
+    .faq__list-item--bottom,
+    .faq__list-item.open .faq__list-item--bottom {
+        padding: 12px 9px;
+    }
+
+    .faq__list-item--content,
+    .faq__list-item--list > li {
+        font-size: 16px;
+        line-height: 140%;
+    }
+
+    .faq__list-item--list {
+        padding-left: 18px;
+    }
+}
