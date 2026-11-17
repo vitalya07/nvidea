@@ -6,6 +6,14 @@
   background-color: var(--colorWhite);
   padding: 15px 0;
 }
+.custom-logo {
+    width: 150px;
+    height: auto;
+}
+.custom-logo > img {
+    width: 100%;
+    height: auto;
+}
 .header__wrapper {
     display: flex;
     align-items: center;
