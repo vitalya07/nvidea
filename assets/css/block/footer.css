@@ -55,11 +55,19 @@
 .footer__solutions-item,.footer__sitemap-item, .footer__right-item  {
     display: block;
 }
-.footer__social {
+/* .footer__social {
     display: flex;
     align-items: center;
     justify-content: end;
     gap: 20px;
+} */
+.footer__social-item {
+    font-family: var(--font-roboto);
+    font-weight: var(--font-regular);
+    color: var(--colorWhite3);
+    font-size: 14px;
+    line-height: 120%;
+    margin-bottom: 8px
 }
 .footer__copy {
     color: #E4E6EA;

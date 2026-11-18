@@ -9,8 +9,116 @@
     <script src="assets/JS/tabs.js" defer></script>
     <script src="assets/JS/faq.js" defer></script>
     <script src="assets/JS/mobile-menu.js" defer></script>
+    <script src="assets/JS/modal.js" defer></script>
 </head>
 <body>
+    
+    <!-- MODAL START -->
+    
+    <div class="modal">
+        <div class="modal__overlay">
+            <div class="modal__content">
+
+                <button class="modal__close" type="button" aria-label="Закрыть окно">
+                    &times;
+                </button>
+
+                <!-- ФОРМА -->
+                <div class="modal__form-content">
+
+                    <div class="modal__head">
+                        <h2 class="modal__title">Оставить заявку</h2>
+                        <p class="modal__descr">
+                            Заполните форму, и наш специалист свяжется с вами
+                            в ближайшее время.
+                        </p>
+                    </div>
+
+                    <form class="modal__form" action="send.php" method="POST">
+
+                        <div class="modal__form-group">
+                            <label class="modal__label" for="modal-name">Ваше имя</label>
+                            <input
+                                class="modal__input"
+                                type="text"
+                                id="modal-name"
+                                name="name"
+                                placeholder="Введите ваше имя"
+                                autocomplete="name"
+                                required
+                            >
+                        </div>
+
+                        <div class="modal__form-group">
+                            <label class="modal__label" for="modal-email">Электронная почта</label>
+                            <input
+                                class="modal__input"
+                                type="email"
+                                id="modal-email"
+                                name="email"
+                                placeholder="Введите вашу почту"
+                                autocomplete="email"
+                                required
+                            >
+                        </div>
+
+                        <div class="modal__form-group">
+                            <label class="modal__label" for="modal-phone">Номер телефона</label>
+                            <input
+                                class="modal__input"
+                                type="tel"
+                                id="modal-phone"
+                                name="phone"
+                                placeholder="+7 (___) ___-__-__"
+                                autocomplete="tel"
+                                required
+                            >
+                        </div>
+
+                        <div class="modal__form-policy">
+                            <input
+                                class="modal__checkbox"
+                                type="checkbox"
+                                id="modal-policy"
+                                name="policy"
+                                required
+                            >
+
+                            <label class="modal__policy-text" for="modal-policy">
+                                Я согласен(а) с
+                                <a href="#" target="_blank">
+                                    политикой обработки персональных данных
+                                </a>
+                            </label>
+                        </div>
+
+                        <button class="modal__submit" type="submit">
+                            Отправить заявку
+                        </button>
+
+                    </form>
+
+                </div>
+
+                <!-- РЕЗУЛЬТАТ ОТПРАВКИ -->
+                <div class="modal__result" hidden>
+                    <div class="modal__result-icon"></div>
+
+                    <h2 class="modal__result-title"></h2>
+
+                    <p class="modal__result-text"></p>
+
+                    <button class="modal__result-btn" type="button">
+                        Закрыть
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL END -->
+
     <header class="header">
         <div class="container">
             <div class="header__wrapper">
@@ -27,8 +135,8 @@
                         <li><a href="#faq">FAQ</a></li>
                     </ul>
                 </nav>
-                <a href="tel:+79999999999" class="header__phone">+44 (0) 203 137 5256</a>
-                <a href="#" class="header__btn">Войти/Регистрация</a>
+                <a href="mail-to:utayerate489@gmail.com" class="header__phone">utayerate489@gmail.com</a>
+                <a href="#" class="header__btn btn">Оставить заявку</a>
                 <div class="hamburger">
                     <span></span>
                     <span></span>
@@ -45,7 +153,7 @@
                     <div class="hero__info">
                         <h1 class="hero__title">Аренда  <span>NVIDIA H100</span> – для высокопроизводительных вычислений</h1>
                         <p class="hero__descr">Представляем самый передовой кластер: NVIDIA H100 построен на основе эталонной архитектуры. В одном кластере можно разместить от 8 до 16 384 карт</p>
-                        <a href="https://www.hyperstack.cloud/nvidia-hgx-sxm5-h100-reserve-now?__hstc=753710.f3a54245dcba2c39135dbd42c1485cb3.1794314618770.1794314618770.1794314618770.1&__hssc=753710.1.1794314618770&__hsfp=879ba1200d3a5a23675e26cdb82df7ec" target="_blank" rel="noopener noreferer" class="hero__btn">Свяжитесь с нами</a>
+                        <button class="hero__btn btn" type="button">Свяжитесь с нами</button>
                     </div>
                     <div class="hero__img">
                         <img src="assets/img/hero/hero.webp" alt="картинка видеокарты" width="540" height="515" loading="lazy">
@@ -132,7 +240,7 @@
                     <div class="product__info">
                         <h2 class="product__title">NVIDIA <span>H100 SXM</span></h2>
                         <p class="product__descr">Цены от 4,5 $ в час</p>
-                        <a href="#" target="_blank" rel="noopener noreferer" class="product__btn">Забронировать</a>
+                        <button class="product__btn btn" type="button">Забронировать</button>
                     </div>
                     <div class="product__img">
                             <picture>
@@ -238,7 +346,7 @@
                                 <p class="performance__list-descr">Гибкость и масштабируемость — основа нашей модели предоставления услуг. Наша инфраструктура построена на кластерах, объединяющих до 16 384 графических ускорителей. За пределами публичных облачных платформ вы вряд ли найдёте сервис, способный обеспечить сопоставимый масштаб и производительность для задач искусственного интеллекта.</p>
                             </div>
                             <!-- 2 END-->
-                            <a href="#" target="_blank" rel="noreferer noopener" class="performance__list-btn">Связаться с нами</a>
+                            <button class="performance__list-btn btn" type="button">Связаться с нами</button>
                         </div>
                     </div>
                     <!-- 2 BOX END -->
@@ -349,70 +457,6 @@
             </div>
         </section>
         <!-- SECTION COMANDS END -->
-        <!-- SECTION BENEFITS START -->
-        <!-- <section class="benefits" id="benefits">
-            <div class="container">
-                <h2 class="benefits__title">Преимущества NVIDIA H100</h2>
-                <a href="#" class="benefits__btn">Войти/Зарегистрироваться</a>
-                <div class="benefits__wrapper">
-                    <div class="benefits__item">
-                        <div class="benefits__item-head">
-                            <div class="benefits__item-img">
-                                <img src="assets/icons/benefits/benefits-1.webp" alt="Форм-фактор SXM" loading="lazy" width="36">
-                            </div>
-                            <h3 class="benefits__item-title">Форм-фактор SXM</h3>
-                        </div>
-                        <p class="benefits__item-desr">Высокоплотные конфигурации GPU, эффективное охлаждение и оптимизация энергопотребления благодаря передовому форм-фактору SXM.</p>
-                    </div>
-                    <div class="benefits__item">
-                        <div class="benefits__item-head">
-                            <div class="benefits__item-img">
-                                <img src="assets/icons/benefits/benefits-2.webp" alt="Эталонная архитектура DGX" loading="lazy" width="36">
-                            </div>
-                            <h3 class="benefits__item-title">Архитектура DGX</h3>
-                        </div>
-                        <p class="benefits__item-desr">Разработано на основе эталонной архитектуры DGX для удовлетворения высоких требований корпоративных приложений в области искусственного интеллекта (AI) и машинного обучения (Machine Learning).</p>
-                    </div>
-                    <div class="benefits__item">
-                        <div class="benefits__item-head">
-                            <div class="benefits__item-img">
-                                <img src="assets/icons/benefits/benefits-3.webp" alt="Масштабируемая архитектура" loading="lazy" width="36">
-                            </div>
-                            <h3 class="benefits__item-title">Масштабируемая архитектура</h3>
-                        </div>
-                        <p class="benefits__item-desr">Модульная архитектура обеспечивает гибкое масштабирование под растущие вычислительные потребности. Создана на базе кластеров, объединяющих до 5120 видеокарт H100</p>
-                    </div>
-                    <div class="benefits__item">
-                        <div class="benefits__item-head">
-                            <div class="benefits__item-img">
-                                <img src="assets/icons/benefits/benefits-4.webp" alt="TDP 700 ВтTDP 700 Вт" loading="lazy" width="36">
-                            </div>
-                            <h3 class="benefits__item-title">TDP 700 Вт</h3>
-                        </div>
-                        <p class="benefits__item-desr">В отличие от версии PCIe, ускоритель H100 SXM рассчитан на более высокий уровень тепловыделения (TDP), что делает его идеальным решением для самых ресурсоёмких задач искусственного интеллекта и высокопроизводительных вычислений (HPC), требующих максимальной вычислительной мощности.</p>
-                    </div>
-                    <div class="benefits__item">
-                        <div class="benefits__item-head">
-                            <div class="benefits__item-img">
-                                <img src="assets/icons/benefits/benefits-5.webp" alt="NVLink и NVSwitch" loading="lazy" width="36">
-                            </div>
-                            <h3 class="benefits__item-title">NVLink и NVSwitch</h3>
-                        </div>
-                        <p class="benefits__item-desr">Платформа HGX SXM5 H100 использует технологии NVLink и NVSwitch, обеспечивающие значительно более высокую пропускную способность межсоединений по сравнению с версией PCIe.</p>
-                    </div>
-                    <div class="benefits__item">
-                        <div class="benefits__item-head">
-                            <div class="benefits__item-img">
-                                <img src="assets/icons/benefits/benefits-6.webp" alt="NVLink и NVSwitch" loading="lazy" width="36">
-                            </div>
-                            <h3 class="benefits__item-title">Технология GPUDirect</h3>
-                        </div>
-                        <p class="benefits__item-desr">Ускоренная передача данных и повышение производительности: чтение и запись непосредственно в память GPU позволяют исключить лишнее копирование данных, снизить нагрузку на процессор и уменьшить задержки.</p>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-        <!-- SECTION BENEFITS END -->
         <!-- SECTION GOOD START -->
         <section class="good" id="good">
             <div class="container">
@@ -420,7 +464,7 @@
                     <div class="good__info">
                         <h2 class="good__info-title">NVIDIA H100</h2>
                         <p class="good__info-descr">Срок поставки до 2 недели для кластера из 500 карт NVIDIA H100</p>
-                        <a href="#" target="_blank" rel="nopener noreferer" class="good__btn">Забронируй сейчас</a>
+                        <button class="good__btn btn" type="button">Забронируй сейчас</button>
                     </div>
                     <div class="good__img">
                         <picture>
@@ -531,7 +575,7 @@
                 <div class="reservation__wrapper">
                     <div class="reservation__info">
                         <h2 class="reservation__title">Доступно только при бронировании от 8 карт NVIDIA H100</h2>
-                        <a href="#" class="reservation__btn" target="_blank" rel="noopener noreferer">Забронировать здесь</a>
+                        <button class="reservation__btn btn">Забронировать здесь</button>
                     </div>
                     <div class="reservation__img">
                         <picture>
@@ -692,77 +736,17 @@
                         <img src="assets/icons/footer/NVIDEA.svg" alt="логотип nvidea" width="312" height="58" loading="lazy">
                     </a>
                 </div>
-                <!-- <div class="footer__address">
-                    <div class="footer__addres-list">
-                        <h4 class="footer__address-title">Великобритания (головной офис)</h4>
-                        <div class="footer__address-item">TechSpace,</div>
-                        <div class="footer__address-item">9–13, улица Сент-Эндрю, 3-й этаж,</div>
-                        <div class="footer__address-item">Лондон EC4A 3AF,</div>
-                        <div class="footer__address-item">Великобритания.</div>
-                    </div>
-                    <div class="footer__addres-list">
-                        <h4 class="footer__address-title">зарегистрированный офис</h4>
-                        <div class="footer__address-item">6-й этаж, улица Грешем, 99,</div>
-                        <div class="footer__address-item">Лондон EC2V 7NG,</div>
-                        <div class="footer__address-item">Великобритания.</div>
-                    </div>
-                    <div class="footer__addres-list">
-                        <h4 class="footer__address-title">Испания</h4>
-                        <div class="footer__address-item">Национальная автомагистраль N-340,</div>
-                        <div class="footer__address-item">176-й км,</div>
-                        <div class="footer__address-item">помещение C-12,</div>
-                        <div class="footer__address-item">Марбелья, 29600,</div>
-                        <div class="footer__address-item">Малага.</div>
-                    </div>
-                </div> -->
-                <!-- <div class="footer__solutions">
-                    <div class="footer__solutions-list">
-                        <h4 class="footer__solutions-title">Решения</h4>
-                        <a href="#" target="_blank" rel="noopener noreferer" class="footer__solutions-item">AI,</a>
-                        <a href="#" target="_blank" rel="noopener noreferer" class="footer__solutions-item">Рендеринг,</a>
-                        <a href="#" target="_blank" rel="noopener noreferer" class="footer__solutions-item">Машинное обучение,</a>
-                        <a href="#" target="_blank" rel="noopener noreferer"  class="footer__solutions-item">Глубокое обучение,</a>
-                        <a href="#" target="_blank" rel="noopener noreferer" class="footer__solutions-item">Виртуальные рабочие станции,</a>
-                        <a href="#" target="_blank" rel="noopener noreferer" class="footer__solutions-item">Высокопроизводительные вычисления,</a>
-                        <a href="#" target="_blank" rel="noopener noreferer" class="footer__solutions-item">Симуляции и визуализация,</a>
-                        <a href="#" target="_blank" rel="noopener noreferer"  class="footer__solutions-item">Аналитика данных,</a>
-                    </div>
-                    <div class="footer__solutions-list">
-                        <h4 class="footer__solutions-title">Ресурсы</h4>
-                        <a href="#" target="_blank" rel="noopener noreferer" class="footer__solutions-item">Блог,</a>
-                        <a href="#" target="_blank" rel="noopener noreferer" class="footer__solutions-item">Руководства и инструкции,</a>
-                        <a href="#" target="_blank" rel="noopener noreferer" class="footer__solutions-item">Истории успеха,</a>
-                        <a href="#" target="_blank" rel="noopener noreferer"  class="footer__solutions-item">Тесты производительности,</a>
-                    </div>
-                </div> -->
-                <!-- <div class="footer__sitemap">
-                    <div class="footer__sitemap-list">
-                        <h4 class="footer__sitemap-title">Карта сайта</h4>
-                        <a href="#" target="_blank" rel="noopener noreferer" class="footer__sitemap-item">Главная страница,</a>
-                        <a href="#" target="_blank" rel="noopener noreferer" class="footer__sitemap-item">Почему Hyperstack,</a>
-                        <a href="#" target="_blank" rel="noopener noreferer" class="footer__sitemap-item">Цены на GPU,</a>
-                        <a href="#" target="_blank" rel="noopener noreferer"  class="footer__sitemap-item">Ресурсы,</a>
-                        <a href="#" target="_blank" rel="noopener noreferer" class="footer__sitemap-item">Документация,</a>
-                        <a href="#" target="_blank" rel="noopener noreferer" class="footer__sitemap-item">Тесты производительности,</a>
-                        <a href="#" target="_blank" rel="noopener noreferer" class="footer__sitemap-item">Карьера,</a>
-                        <a href="#" target="_blank" rel="noopener noreferer" class="footer__sitemap-item">Контакты,</a>
-                        <a href="#" target="_blank" rel="noopener noreferer"  class="footer__sitemap-item">Войти,</a>
-                        <a href="#" target="_blank" rel="noopener noreferer" class="footer__sitemap-item">О компании,</a>
-                        <a href="#" target="_blank" rel="noopener noreferer" class="footer__sitemap-item">Программа Bug Bounty,</a>
-                        <a href="#" target="_blank" rel="noopener noreferer" class="footer__sitemap-item">Безопасность,</a>
-                    </div>
-                </div> -->
-                <!-- <div class="footer__right">
+                <div class="footer__center">
                     <div class="footer__right-list">
-                        <h4 class="footer__right-title">Продукты</h4>
-                        <a href="#" target="_blank" rel="noopener noreferer" class="footer__right-item">NVIDIA HGX SXM5 H100,</a>
-                        <a href="#" target="_blank" rel="noopener noreferer" class="footer__right-item">NVIDIA H100 PCIe,</a>
-                        <a href="#" target="_blank" rel="noopener noreferer" class="footer__right-item">NVIDIA A100,</a>
-                        <a href="#" target="_blank" rel="noopener noreferer" class="footer__right-item">NVIDIA L40,</a>
-                        <a href="#" target="_blank" rel="noopener noreferer" class="footer__right-item">NVIDIA RTX A6000,</a>
-                        <a href="#" target="_blank" rel="noopener noreferer" class="footer__right-item">NVIDIA HGX B200,</a>
-                        <a href="#" target="_blank" rel="noopener noreferer" class="footer__right-item">NVIDIA H200 SXM,</a>
+                        <h4 class="footer__right-title">Карта сайта</h4>
+                        <a href="#"  class="footer__right-item">Продукт</a>
+                        <a href="#"  class="footer__right-item">Команда</a>
+                        <a href="#"  class="footer__right-item">Преимущества</a>
+                        <a href="#"  class="footer__right-item">Технические характеристики</a>
+                        <a href="#"  class="footer__right-item">FAQ</a>
                     </div>
+                </div>
+                <div class="footer__right">
                     <div class="footer__right-list">
                         <h4 class="footer__right-title">Юридическая информация</h4>
                         <a href="#" target="_blank" rel="noopener noreferer" class="footer__right-item">Условия использования,</a>
@@ -770,43 +754,11 @@
                         <a href="#" target="_blank" rel="noopener noreferer" class="footer__right-item">Политика конфиденциальности,</a>
                         <a href="#" target="_blank" rel="noopener noreferer" class="footer__right-item">Обработка данных,</a>
                     </div>
-                </div> -->
+                </div>
             </div>
-            <!-- <div class="footer__social">
-                <a href="https://www.linkedin.com/showcase/hyperstackshowcasepage" target="_blank" rel="noopener noreferer" class="footer__social-link">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                        <g clip-path="url(#clip0_1204_594)">
-                        <path d="M29.5 0H2.5C1.11875 0 0 1.11875 0 2.5V29.5C0 30.8813 1.11875 32 2.5 32H29.5C30.8813 32 32 30.8813 32 29.5V2.5C32 1.11875 30.8813 0 29.5 0ZM11.525 22.6938H8.40625V12.7125H11.525V22.6938ZM9.88125 11.4625H9.85625C8.725 11.4625 7.99375 10.7 7.99375 9.73125C7.99375 8.74375 8.75 8 9.9 8C11.05 8 11.7563 8.74375 11.7812 9.73125C11.7875 10.6938 11.0563 11.4625 9.88125 11.4625ZM24 22.6938H20.4625V17.5312C20.4625 16.1812 19.9125 15.2563 18.6938 15.2563C17.7625 15.2563 17.2437 15.8813 17.0063 16.4813C16.9188 16.6938 16.9312 16.9937 16.9312 17.3V22.6938H13.425C13.425 22.6938 13.4688 13.5437 13.425 12.7125H16.9312V14.2812C17.1375 13.5938 18.2563 12.6187 20.0438 12.6187C22.2625 12.6187 24 14.0562 24 17.1437V22.6938Z" fill="#9233E9"></path>
-                        </g>
-                        <defs>
-                        <clipPath id="clip0_1204_594">
-                            <rect width="32" height="32" fill="white"></rect>
-                        </clipPath>
-                        </defs>
-                    </svg>
-                </a>
-
-                <a href="https://twitter.com/Hyperstackcloud" target="_blank" rel="noopener noreferer" class="footer__social-link">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                        <rect width="32" height="32" rx="3" fill="#9233E9"></rect>
-                        <path d="M18.524 14.7756L24.481 8H23.0696L17.8948 13.882L13.7647 8H9L15.2469 16.8953L9 24H10.4114L15.8728 17.787L20.2353 24H25L18.524 14.7756ZM16.5902 16.9734L15.9563 16.0871L10.9204 9.04117H13.0887L17.154 14.7296L17.7852 15.6159L23.0689 23.0096H20.9006L16.5902 16.9734Z" fill="#171717"></path>
-                    </svg>
-                </a>
-
-                <a href="https://www.youtube.com/@Hyperstackcloud" target="_blank" rel="noopener noreferer" class="footer__social-link">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                        <g clip-path="url(#clip0_1204_599)">
-                        <path d="M13.8687 19.0812L19.1062 16.0062L13.8687 12.9312V19.0812Z" fill="#9233E9"></path>
-                        <path d="M29.5 0H2.5C1.11875 0 0 1.11875 0 2.5V29.5C0 30.8813 1.11875 32 2.5 32H29.5C30.8813 32 32 30.8813 32 29.5V2.5C32 1.11875 30.8813 0 29.5 0ZM24 18.8625C24 21.6187 21.2437 21.6187 21.2437 21.6187H10.7563C8 21.6187 8 18.8625 8 18.8625V13.1437C8 10.3875 10.7563 10.3875 10.7563 10.3875H21.2437C24 10.3875 24 13.1437 24 13.1437V18.8625Z" fill="#9233E9"></path>
-                        </g>
-                        <defs>
-                        <clipPath id="clip0_1204_599">
-                            <rect width="32" height="32" fill="white"></rect>
-                        </clipPath>
-                        </defs>
-                    </svg>
-                </a>
-            </div> -->
+            <div class="footer__social">
+                <a href="mail-to:utayerate489@gmail.com" target="_blank" rel="noopener noreferer" class="footer__social-item">utayerate489@gmail.com</a>
+            </div>
             <p class="footer__copy">® 2026 Vector. Все права защищены. Логотип Vector является зарегистрированным товарным знаком. Названия других компаний и продуктов могут являться товарными знаками соответствующих компаний, которым они принадлежат.</p>
         </div>
     </footer>
