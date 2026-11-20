@@ -10,6 +10,7 @@
 }
 .footer__logo {
     margin-bottom: 40px;
+    color: var(--colorWhite);
 }
 .footer__logo-powerd {
     font-family: var(--font-roboto);
@@ -22,9 +23,8 @@
 }
 .footer__logo-image {
     display: block;
-    width: 280px;
+    width: 120px;
     height: auto;
-    margin-bottom: 40px;
 }
 .footer__logo-image > img {
     width: 100%;
@@ -110,8 +110,7 @@
     }
 
     .footer__logo-image {
-        width: 250px;
-        margin-bottom: 15px;
+        width: 120px;
     }
 
     .footer__address,

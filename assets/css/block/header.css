@@ -9,6 +9,11 @@
 .custom-logo {
     width: 150px;
     height: auto;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: var(--colorDark);
 }
 .custom-logo > img {
     width: 100%;

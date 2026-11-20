@@ -13,7 +13,7 @@
     line-height: 120%;
     color: var(--colorDark2);
     margin-bottom: 8px;
-    text-align: center;
+    text-align: left;
 }
 .advantages__item-img {
     width: 380px;
@@ -33,7 +33,7 @@
     line-height: 120%;
     color: var(--colorMain);
     margin-bottom: 24px;
-    text-align: center;
+    text-align: left;
 }
 .advantages__item-descr {
     font-family: var(--font-roboto);
@@ -41,7 +41,7 @@
     font-size: 15px;
     line-height: 120%;
     color: var(--colorDark2);
-    text-align: center;
+    text-align: left;
 }
 /* ============================= */
 /* ADVANTAGES ADAPTIVE */
